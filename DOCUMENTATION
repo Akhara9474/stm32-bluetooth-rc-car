@@ -1,0 +1,43 @@
+# Pin Map
+
+## Motor Driver (L298N)
+- ENA (PWM) → PA8 (TIM1_CH1)
+- ENB (PWM) → PA9 (TIM1_CH2)
+- IN1 → PB0
+- IN2 → PB1
+- IN3 → PB2
+- IN4 → PB10
+
+## Bluetooth (HC-05)
+- HC-05 TX → STM32 RX (USART2_RX)
+- HC-05 RX ← STM32 TX (USART2_TX) (use voltage divider)
+- VCC → 5V
+- GND → GND
+
+# Bluetooth App + Commands
+
+## App Used
+- (put the app name here, e.g., “Serial Bluetooth Terminal” on Android)
+
+## HC-05 Settings
+- Baud rate: 9600
+- Pairing PIN: 1234 or 0000
+
+## Commands
+- `F` = Forward
+- `B` = Backward
+- `S` = Stop
+- `L` = Left
+- `R` = Right
+
+# Bill of Materials (BOM)
+
+- STM32F407 board
+- L298N driver module
+- 2x DC motors
+- HC-05 Bluetooth module
+- Battery pack (4xAA or equivalent)
+- Jumper wires
+- Breadboard 
+- Resistors for voltage divider (1k + 2k)
+
